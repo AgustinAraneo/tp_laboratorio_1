@@ -68,18 +68,18 @@ int getInt(int *enteroIngresado, char *mensaje, char *mensajeError,
 				return precioDebito;
 			}
 
-			float calcCredit(float precioVuelo, int credito) {
+			float calcCredit(float precioVuelo, float credito) {
 				float precioCredito;
 
-				precioCredito = precioVuelo + (precioVuelo * credito);
+				precioCredito = (precioVuelo * credito);
 
 				return precioCredito;
 			}
 
-			float calcBit(float precioVuelo, int btcCambio) {
+			float calcBit(float precioVuelo, float btcCambio) {
 				float precioBit;
 
-				precioBit = btcCambio / (float) precioVuelo;
+				precioBit = precioVuelo / (float)btcCambio;
 
 				return precioBit;
 			}
@@ -104,6 +104,7 @@ int getInt(int *enteroIngresado, char *mensaje, char *mensajeError,
 
 				return resto;
 			}
+
 
 
 

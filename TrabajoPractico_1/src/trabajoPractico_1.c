@@ -63,8 +63,8 @@ int main(void) {
 		if (validacionRetorno == 0) {
 			switch (opcionMenu) {
 			case 1:
-				validacionRetorno = getInt(&kmTotales, "Ingrese los km:\n",
-						"Error. Ingresaste kms inválidos\n", 1, 15000);
+				validacionRetorno = getInt(&kmTotales, "Ingrese los km:",
+						"Error. Ingresaste kms inválidos", 1, 15000);
 				if (validacionRetorno == 0) {
 					printf("Los km se cargaron\n");
 				} else {
@@ -136,7 +136,7 @@ int main(void) {
 				printf("Precio con tarjeta de debito: $ %.2f \n", debitoLatam);
 				printf("Precio con tarjeta de credito: $ %.2f \n",
 						creditoLatam);
-				printf("Precio pagando con Bitcoin es: $ %.2f BTC\n",
+				printf("Precio pagando con Bitcoin es: $ %.8f BTC\n",
 						bitcoinLatam);
 				printf("Precio unitario por Km es: $ %.2f \n", unitarioLatam);
 				printf("\n");
@@ -145,7 +145,7 @@ int main(void) {
 						debitoAerolineas);
 				printf("Precio con tarjeta de credito: $ %.2f \n",
 						creditoAerolineas);
-				printf("Precio pagando con Bitcoin es: $ %.2f BTC\n",
+				printf("Precio pagando con Bitcoin es: $ %.8f BTC\n",
 						bitcoinAerolineas);
 				printf("Precio unitario por Km es: $ %.2f \n",
 						unitarioAerolineas);
@@ -171,7 +171,7 @@ int main(void) {
 						debitoLatamAux);
 				printf("Precio con tarjeta de credito: $ %.2f \n",
 						creditoLatamAux);
-				printf("Precio pagando con Bitcoin es: %.2f BTC\n",
+				printf("Precio pagando con Bitcoin es: %.8f BTC\n",
 						bitcoinLatamAux);
 				printf("Precio unitario por Km es: $ %.2f \n",
 						unitarioLatamAux);
@@ -181,7 +181,7 @@ int main(void) {
 						debitoAerolineasAux);
 				printf("Precio con tarjeta de credito: $ %.2f\n",
 						creditoAerolineasAux);
-				printf("Precio pagando con Bitcoin es: %.2f btc \n",
+				printf("Precio pagando con Bitcoin es: %.8f btc \n",
 						bitcoinAerolineasAux);
 				printf("Precio unitario por Km es: $ %.2f \n",
 						unitarioAerolineasAux);

@@ -40,13 +40,13 @@ float calcDebit(float precioVuelo, int descuento);
 /// @param precioVuelo
 /// @param credito
 /// @return Retorna el resultado del calculo.
-float calcCredit(float precioVuelo, int credito);
+float calcCredit(float precioVuelo, float credito);
 /// @brief
 /// Esta funcion tiene como fin realizar una conversion.
 /// @param precioVuelo
 /// @param btcCambio
 /// @return Retorna el resultado del calculo.
-float calcBit(float precioVuelo, int btcCambio);
+float calcBit(float precioVuelo, float btcCambio);
 /// @brief
 /// Esta funcion tiene como fin realizar una division para conseguir un valor unitario entre 2 variables.
 /// @param precioVuelo
